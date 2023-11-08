@@ -1,0 +1,75 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    text-align: center;
+    background-color: lightslategrey;
+    font-family: cursive;
+}
+.form{
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, .3);
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.input {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    border: solid 4px green;
+    color: lightblue;
+}
+
+.input::placeholder{
+    color: lightblue;
+    font-family: cursive;
+}
+
+.btn {
+    background-color: green;
+    color: white;
+    border: none;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    margin: 20px 0;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0, 0.3);
+    cursor: pointer;
+}
+
+.btn:hover{
+    filter: brightness(0.9);
+}
+
+.score{
+    color: green;
+    text-align: right;
+}
+/* Notes:
+    - box shadow = horizontal. vertical, sides, blur radius rgba function
+        - the lower the horizontal is the closer the shadow is to the left most edge
+        - the lower the vertical is the closer the shadow is to the top most edge
+        - box shadow is otherwise the same size as padding
+        - the greater the blur radius the greater the shadow extends from all sides, in addition to the more it looses it's shape
+        - rgba function controls transparency of the blur; as you increase number it decreases transparency
+    - border-radius = size in px (px define how curved the border is; increase px = increase curvature)
+    - margin
+        - all margins can have the following properties:auto, length (px, pt, cm, etc), % (wrt to width of containing element, and inherit ("specifies that the margin should be inherited from the parent element" -- w3school //note negative values are not allowed
+    -display: block;
+        - display is a css function with various properties including block; block is 
+    - padding for btn "class" is referring to top and bottom padding
+    - hover selector = when mouse is over desired item (has 3 other similar selector css tools:
+        - :link = to style links to unvisited pages
+        - :visited = to style linkes to visited pages
+        - :active = to style the active link
+        - as you increase number (before 1)  you decrease shade brightness
+*/
